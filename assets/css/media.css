@@ -1,0 +1,384 @@
+@media(max-width: 1440px) {
+    .background-image-bus{
+        top: 10%;
+    }
+    .left-block{
+        margin: 0 10px 0 5px;
+    }
+    .center-block{
+        margin-right: 10px;
+    }
+    .nav__link{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 1025px){
+    .left-block{
+        margin: 0 10px 0 5px;
+        width: 175px;
+    }
+    .logo-text{
+        font-size: 25px;
+    }
+    .button-header span{
+        font-size: 12px;
+    }
+    .center-block{
+        text-align: left;
+        margin-right: 10px;
+    }
+    .nav__link{
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .button-header img{
+        margin-right: 5px;
+        width: 15px;
+    }
+    .button-header{
+        padding: 10px 20px;
+    }
+    .input-date{
+        padding: 0;
+    }
+    .select{
+        font-size: 15px;
+        padding: 15px 10px;
+        letter-spacing: 0.05em;
+    }
+    .select.last-select, .select.first-select{
+        background-size: 5%;
+    }
+    .input-date::placeholder{
+        font-size: 16px;
+    }
+    .form-main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .background-image-bus{
+        top: 20%;
+    }
+    .item-bus{
+        width: 50%;
+        align-self: flex-end;
+    }
+    .block-title{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 769px){
+    body.lock{
+        overflow: hidden;
+    }
+    .background-section{
+        height: 100%;
+    }
+    .section-filter{
+        position: relative;
+        margin-top: 35px;
+        padding-bottom: 35px;
+        top: 0;
+    }
+    .header{
+        display: none;
+    }
+    .header_pages{
+        display: none;
+    }
+    .header_mobile{
+        display: flex;
+        position: relative;
+    }
+    .header_mobile_pages{
+        display: flex;
+        background-image:  linear-gradient(180deg, rgba(255, 254, 254, 0.7) 75%, rgba(255, 254, 254, 0) 100%), url('../images/pexels-flo-maderebner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 15px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        position: sticky;
+        width: 100%;
+        top: 0;
+        box-shadow: 0 0 10px #000;
+    }
+    .changing-images{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        background-position: center;
+    }
+    .wrapper_top-image.about_us{
+        background-image: url('../../assets/images/road.jpg');
+    }
+    .wrapper_top-image.rent_main{
+        background-image: url('../../assets/images/forest.jpg');
+    }
+    .wrapper_top-image.rent_two{
+        background-image: url('../../assets/images/forest.jpg');
+    }
+    .wrapper_top-image.agents{
+        background-image: url('../../assets/images/agents.jpg');
+    }
+    .wrapper_top-image.tours{
+        background-image: url('../../assets/images/top-tours.jpg');
+    }
+    .wrapper_top-image.reviews{
+        background-image: url('../../assets/images/reviews.jpg');
+    }
+    .wrapper_top-image.contacts{
+        background-image: url('../../assets/images/reviews.jpg');
+    }
+    .top-image{
+        display: none;
+    }
+    .button-header{
+        padding: 10px 15px;
+        margin: 0 auto;
+        background: transparent;
+    }
+    .button-header:hover{
+        background: transparent;
+    }
+    .button-header img{
+        margin: 0;
+        width: 35px;
+        display: flex;
+    }
+    .button-header span{
+        display: none;
+    }
+    .form-main{
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .select{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .select.first-select, .select.last-select{
+        border-radius: 10px 10px 10px 10px;
+        background-size: 5%;
+    }
+    .select{
+        border-radius: 10px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+    .input-date{
+        margin: 0;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    .wrapper-menu-burger{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .right-block{
+        width: 20%;
+    }
+    .left-block{
+        height: 95px;
+    }
+    .input-date::placeholder{
+        font-size: 20px;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 100;
+        height: 100vh;
+    }
+    nav.border-radius{
+        border-radius: 20px;
+    }
+    .nav.active{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__link{
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0;
+        padding: 15px 20px;
+        font-family: 'DlgGeo', sans-serif;
+        border-bottom: 1px solid;
+        display: flex;
+        align-items: center;
+    }
+    .nav__link img{
+        margin-right: 15px;
+    }
+    .section_advantages{
+        flex-direction: column;
+    }
+    .item-block-advantage{
+        width: 100%;
+    }
+    .background-image-bus{
+        display: none;
+    }
+    .wrapper-advantages{
+        flex-direction: column;
+    }
+    .item-advantage{
+        width: 100%;
+    }
+    .all-section_text{
+        margin: 25px 0 25px 0;
+    }   
+    .tour_text{
+        font-size: 20px;
+        min-height: 105px;
+    } 
+    .background-top-image_tour{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .center-intro{
+        flex-direction: column-reverse;
+    }
+    .center-intro_slider, .center-intro_text{
+        width: 100%;
+    }
+    .tour__slider {
+        margin-top: 25px;
+    }
+}
+@media(max-width: 426px){
+    .background-section{
+        height: 100vh;
+        background-image: linear-gradient(180deg, rgba(255, 254, 254, 0.7) 75%, rgba(255, 254, 254, 0) 100%), url('../images/pexels-flo-maderebner.jpg');
+    }
+    .form-main, .bus-characteristic_photo, .bus-characteristic_photo img, .bus-characteristic_description, .left-rent_table, .right-rent_table, .item-bus, .button-more{
+        width: 100%;
+    }
+    .all-section_text{
+        font-size: 20px;
+    }
+    .agents-title{
+        margin: 0;
+    }
+    .title{
+        top: 40%;
+        font-size: 35px;
+    }
+    .modal__title{
+        font-size: 18px;
+    }
+    .block_bus-characteristic, .characteristic-comfort, .characteristic-baggage, .characteristic-site, .wrapper-transport{
+        flex-direction: column;
+    }
+    .bus-characteristic_description{
+        font-size: 22px;
+    }
+    .characteristic-name{
+        text-align: center;
+    }
+    .images-comfort img{
+        width: 35px;
+    }
+    .rent_table{
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .wrapper-descr{
+        text-align: center;
+    }
+    .background-top-image_man, .background-top-image_zhong, .background-top-image_scania, .background-top-image_yutong{
+        padding-top: 70px;
+        padding-bottom: 70px; 
+    }
+    .center-text_title{
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .center-text_desc{
+        font-size: 22px;
+    }
+    .center-intro_text-title{
+        font-size: 32px;
+    }
+    .center-intro_text-price{
+        font-size: 38px;
+    }
+    .td-section{
+        font-size: 18px;
+    }
+    .rent-title{
+        font-size: 24px;
+    }
+    .tour-link{
+        width: 100%;
+    }
+    .review_item{
+        text-align: center;
+    }
+    .review_item, .review-text{
+        flex-direction: column;
+    } 
+    .wrapper_stars{
+        justify-content: center;
+    }
+    .item_tour-excursion, .item_tour-excursion_price{
+        flex-direction: column;
+    }
+    .item_tour-excursion_image, .item_tour-excursion_description{
+        width: 100%;
+    }
+    .item_tour-excursion_description{
+        padding-left: 0;
+    }
+    .item_tour-excursion_title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .item_tour-excursion_text{
+        font-size: 20px;
+    }
+    .table_price-row{
+        font-size: 20px;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-block_nav, .footer-block_adress, .footer-block_mail{
+        width: 100%;
+        border-bottom: 1px solid;
+    }
+    .select{
+        padding: 15px 75px;
+        letter-spacing: 0em;
+    }
+}
+@media(max-width: 376px){
+    .select{
+        padding: 15px 50px;
+    }
+}
+@media(max-width: 321px){
+    .title{
+        font-size: 30px;
+    }
+    .select, .input-date::placeholder{
+        font-size: 16px;
+    }
+    .select{
+        padding: 15px 50px;
+    }
+}
