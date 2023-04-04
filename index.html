@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мы являемся туроператором и специализируемся на автобусных турах">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/media.css"> 
+    <title>Travel Store</title>
+</head>
+<body>
+    <div class="background-section">
+		<header class="header">
+            <a href="index.html" class="left-block">
+                <div class="wrapper-logo">
+                    <div class="logo-text">Travel Store</div>
+                    <img class="logo-item" src="assets/images/logo.png" alt="logo">
+                </div>
+            </a>
+            <div class="center-block">
+                <div class="header_adress">
+                    <img src="assets/images/map.png" alt="map-icon">
+                    <div class="item-adress">пр. Независимости 11/2, офис 522</div>
+                    <div class="item-time">пн-пт: 9.00-19.00</div>
+                </div>
+                <nav>
+                    <a class="nav__link" href="pages/page_about_us.html" >О нас</a>
+                    <a class="nav__link" href="pages/page_tours.html" >Туры</a>
+                    <!-- <a class="nav__link" href="pages/page_rent-main.html" >Аренда автобусов</a> -->
+                    <a class="nav__link" href="pages/page_agents.html" >Агенствам</a>
+                    <a class="nav__link" href="pages/page_reviews.html" >Отзывы</a>
+                    <a class="nav__link" href="pages/page_contacts.html" >Контакты</a>
+                </nav>
+            </div>
+            <div class="right-block">
+                <button class="button-header" data-modal-button="#popup">
+                    <img src="assets/images/telephone.png" alt="phone-desktop-button">
+                    <span>Обратный звонок</span>
+                </button>
+            </div>
+		</header>
+        <!-- мобильный header -->
+        <div class="header_mobile">
+            <div class="wrapper-menu-burger">
+                <div class="menu-icon-wrapper" id="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                </div>
+            </div>
+            <nav class="nav border-radius">
+                <a class="nav__link" href="pages/page_about_us.html" ><img src="assets/images/about.png" alt="icons">О нас</a>
+                <a class="nav__link" href="pages/page_tours.html" ><img src="assets/images/tours.png" alt="icons">Туры</a>
+                <!-- <a class="nav__link" href="pages/page_rent-main.html" ><img src="assets/images/bus.png" alt="icons">Аренда автобусов</a> -->
+                <a class="nav__link" href="pages/page_agents.html" ><img src="assets/images/businessman.png" alt="icons">Агенствам</a>
+                <a class="nav__link" href="pages/page_reviews.html" ><img src="assets/images/review.png" alt="icons">Отзывы</a>
+                <a class="nav__link" href="pages/page_contacts.html" ><img src="assets/images/contacts.png" alt="icons">Контакты</a>
+            </nav>           
+           
+            <a href="index.html" class="left-block">
+                <div class="wrapper-logo">
+                    <div class="logo-text">Travel Store</div>
+                    <img class="logo-item" src="assets/images/logo.png" alt="logo">
+                </div>
+            </a>
+
+            <div class="right-block">
+                <button class="button-header" data-modal-button="#popup">
+                    <img src="assets/images/phone.png" alt="telephone-mobile-button">
+                    <span>Обратный звонок</span>
+                </button>
+            </div>
+
+        </div>
+		<div class="section-filter">
+            <div class="container">
+                <form class="form-main" action="#" method="POST">
+                    <select name="filter__name" class="form__control linked__data select first-select">
+                        <option value="">Направление</option>
+                        <option value="belarus">Беларусь</option>
+                        <option value="russia">Россия</option>
+                    </select>
+                    <select name="filter__type" class="form__control linked__data select">
+                        <option value="">Название тура</option>
+                        <option value="piter_i_karelia">Санкт-Петербург и Карелия</option>
+                        <option value="new_year_piter">Новый Год в Санкт-Петербурге!</option>
+                        <option value="mountains_zapoliarie">Горнолыжный тур в Заполярье</option>
+                        <option value="mountains_poliana">Горнолыжный тур в Красную Поляну</option>
+                        <option value="new-year_brest">Брест и Беловежская пуща</option>
+                        <option value="new-year_grodno">Новогоднее путешествие в Гродно</option>
+                        <option value="zona_otchujdenia">Тур в зону отчуждения</option>
+                        <option value="rozhdestvo_v_karelii">Рождественская сказка в Карелии</option>
+                        <option value="moskva_newyear">Ж/Д тур в Москву на Новый год</option>
+                    </select>
+                    <input type="text" id="datepicker" class="input-date" aria-label="Date" placeholder="Дата" name="date">                  
+                    <select name="filter__count" class="select last-select">
+                        <option value="">Количество человек</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="four">5 и более</option>
+                    </select>      
+                    <a href="#result" class="button_submit-main">Поиск</a>
+                </form>					
+            </div>
+	    </div>
+	</div>
+    <main>
+        <div class="container">
+            <div class="intro-section">
+                <div class="section_advantages">
+                    <div class="item-block-advantage">
+                        <div class="item-number">01
+                            <div class="item-skill">Опыт</div>
+                        </div>
+                        <div class="item-text">За многолетний опыт работы мы смогли подобрать только самых лучших гидов, менеджеров, сопровождающих специально для Вас!</div>
+                    </div>
+                    <div class="item-block-advantage">
+                        <div class="item-number">02
+                            <div class="item-skill">Команда</div>
+                        </div>
+                        <div class="item-text">Наша команда состоит из профессионалов своего дела, имеющих огромный опыт в туризме.</div>
+                    </div>
+                    <div class="item-block-advantage">
+                        <div class="item-number">03
+                            <div class="item-skill">Эмоции</div>
+                        </div>
+                        <div class="item-text">Наши сотрудники прекрасно знают туры изнутри и обязательно помогут вам подобрать лучшее путешествие!</div>
+                    </div>
+                </div>
+                <div class="main_title">АВТОБУСНЫЕ ТУРЫ</div>
+                <div class="products__section">
+                    <div id="result" class="products__list">
+                        <a href="pages/page_tour-karelia-piter.html" class="tour-link filtered piter_i_karelia russia">
+                            <div class="tour">
+                                <span class="price-tour">100$</span>
+                                <span class="days-tour">5 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/sanct-peterburg.jpg" alt="sanct-peterburg">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Автобусный тур в Санкт-Петербург и Карелию</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-new_year-piter.html" class="tour-link filtered new_year_piter russia">
+                            <div class="tour">
+                                <span class="price-tour">120$</span>
+                                <span class="days-tour">5 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/new-year_piter.jpg" alt="sanct-peterburg_new-year">
+                                </div>
+                                <div class="tour_text">                                 
+                                    <span>Новый Год в Санкт-Петербурге!</span>                                   
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-zapoliarie.html" class="tour-link filtered mountains_zapoliarie russia">
+                            <div class="tour">
+                                <span class="price-tour">340$</span>
+                                <span class="days-tour">8 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/zapoliarie.jpg" alt="zapoliarie">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Горнолыжный тур в Заполярье</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-krasnaya_poliana.html" class="tour-link filtered mountains_poliana russia">
+                            <div class="tour">
+                                <span class="price-tour">395$</span>
+                                <span class="days-tour">10 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/poliana.jpg" alt="poliana">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Горнолыжный тур в Красную Поляну</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-brest.html" class="tour-link filtered new-year_brest belarus">
+                            <div class="tour">
+                                <span class="price-tour">230BYN</span>
+                                <span class="days-tour">2 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/brest.jpg" alt="brest">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Новогодняя сказка в Бресте и Беловежской пуще</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-grodno.html" class="tour-link filtered new-year_grodno belarus">
+                            <div class="tour">
+                                <span class="price-tour">230BYN</span>
+                                <span class="days-tour">2 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/grodno.jpg" alt="grodno">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Новогоднее путешествие в Гродно</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="pages/page_tour-zona-otchujdenia.html" class="tour-link filtered zona_otchujdenia belarus">
+                            <div class="tour">
+                                <span class="price-tour">145BYN</span>
+                                <span class="days-tour">1 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/zona.jpg" alt="zona_otchujdenia">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Ж/Д тур в зону отчуждения</span>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="pages/page_tour-rozhdestvo_v_karelii.html" class="tour-link filtered rozhdestvo_v_karelii russia">
+                            <div class="tour">
+                                <span class="price-tour">150€</span>
+                                <span class="days-tour">5 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/karelianewyear.jpg" alt="rozhdestvo_v_karelii">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Рождественская сказка в Карелии</span>
+                                </div>
+                            </div>
+                        </a> 
+                        <a href="pages/page_tour-moskva_newyear.html" class="tour-link filtered moskva_newyear russia">
+                            <div class="tour">
+                                <span class="price-tour">125$</span>
+                                <span class="days-tour">4 дн.</span>
+                                <div class="img-wrapper">
+                                    <img class="tour_img" src="assets/images/moskvanewyear.jpg" alt="moskva_newyear">
+                                </div>
+                                <div class="tour_text">
+                                    <span>Ж/Д тур в Москву на Новый год</span>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <!-- <div class="main_title">АРЕНДА АВТОБУСОВ</div>
+                <div class="wrapper-transport">
+                    <div class="item-bus">
+                        <img src="assets/images/bus-scania.jpg" alt="bus">
+                        <div class="bus-name">Scania K380</div>
+                    </div>
+    
+                    <div class="item-bus">
+                        <img src="assets/images/bus-yutong.jpg" alt="bus">
+                        <div class="bus-name">Yutong ZK6122H9</div>
+                    </div>
+    
+                    <div class="item-bus">
+                        <img src="assets/images/bus-zhong.jpg" alt="bus">
+                        <div class="bus-name">Zhong Tong LCK 6127H</div>
+                    </div>
+    
+                    <div class="item-bus">
+                        <img src="assets/images/bus-man.jpg" alt="bus">
+                        <div class="bus-name">Man LION'S Coach LR08</div>
+                    </div>
+                </div>  
+                <a href="pages/page_rent-two.html" class="button-more">Подробнее</a>                -->
+            </div>                       
+        </div>
+        <div class="section-block_reviews">
+            <div class="container">
+                <div class="main_title">ОТЗЫВЫ</div>
+                <div class="main-page_reviews">
+                    <div class="main-page_review slider__item">
+                        <div class="main-page_review-stars">
+                            <img src="assets/images/star.png" alt="star">
+                            <img src="assets/images/star.png" alt="star">
+                            <img src="assets/images/star.png" alt="star">
+                            <img src="assets/images/star.png" alt="star">
+                            <img src="assets/images/star.png" alt="star">
+                        </div>
+                        <div class="main-page_review-text">Очень довольна консультацией и туром. Буду обращаться еще!</div>
+                        <div class="main-page_review-photo">
+                            <img src="assets/images/autor.jpg" alt="autor">
+                        </div>
+                        <div class="main-page_review-name">Мария Иванова</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-block_nav">
+                    <nav class="footer_nav">
+                        <a class="footer__link" href="pages/page_about_us.html" >О нас</a>
+                        <a class="footer__link" href="pages/page_tours.html" >Туры</a>
+                        <!-- <a class="footer__link" href="pages/page_rent-main.html" >Аренда автобусов</a> -->
+                        <a class="footer__link" href="pages/page_agents.html" >Агенствам</a>
+                        <a class="footer__link" href="pages/page_reviews.html" >Отзывы</a>
+                    </nav> 
+                </div>
+                <div class="footer-block_adress">
+                    <div class="footer-block_adress-title">КОНТАКТЫ</div>
+                    <div class="footer-block_adress-street">пр. Независимости 11/2, офис 522</div>
+                    <div class="footer-block_adress-title">ВРЕМЯ РАБОТЫ</div>
+                    <div class="footer-block_adress-time">Пн-пт: 9.00-19.00</div>
+                    <div class="footer-block_adress-time">Сб-вс: выходной</div>                                   
+                </div>
+                <div class="footer-block_mail">
+                    <div class="footer-block_mail-title">ПОДПИСЫВАЙТЕСЬ И БУДЬТЕ В КУРСЕ НОВОСТЕЙ!</div>
+                    <div class="footer-block_mail-text">Узнайте о последних новостях первыми</div>                   
+                    <div class="image-instagram">
+                        <a href="https://www.instagram.com/travelstore.by/" target="_blank"><img src="assets/images/inst.png" alt="instagram"></a>
+                    </div>
+                    <div class="image-telegram">
+                        <a href="https://t.me/+unvJSVJpIRE1YWI6" target="_blank"><img src="assets/images/tg.png" alt="telegram"></a>
+                    </div>
+                    <div class="text_registr">
+                        <p>ООО "Стор Тур"</p>   
+                        <p>Регистрационный номер 193661446 зарегистрирован 13.12.2022 г. Минским городским исполнительным комитетом</p>                        
+                    </div>
+                </div>
+            </div>               
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="popup popup_closed" id="popup" data-modal>
+        <div class="popup_body">
+            <div class="popup_content">               
+                <div style="width: 100%;">
+                    <h2 class="modal__title">Заказать обратный звонок</h2>
+                    <a class="popup__close" href="#" data-modal-close>
+                        <img src="assets/images/closed.png" alt="close">
+                    </a>
+                    <form action="#" method="POST" class="consult_form" id="consult_form" name="consult-form">
+                        <div class="modal__content">
+                            <label class="form__label">
+                                <input class="form-input name" type="text" name="name" placeholder="Имя" data-validate-field="name">
+                            </label>
+                            <label class="form__label">
+                                <input id="phone" class="form-input phone" type="tel" name="phone" placeholder="Телефон" data-validate-field="phone" required>
+                            </label>                           
+                        </div>
+                        <div class="modal__footer">
+                            <button class="button third" type="submit">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <link rel="stylesheet" href="assets/libs/datepicker/css/datepicker.min.css">
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/datepicker/js/datepicker.min.js"></script>
+    <script src="assets/libs/just-validate.min.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/libs/slick.min.js"></script>  
+    <script src="assets/js/main.js"></script>  
+    <script src="assets/libs/jquery.maskedinput.min.js"></script>   
+    <script defer>
+        /* Slider */
+        $(".main-page_reviews").slick({
+            arrows: true,
+            adaptiveHeight: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 769,
+                    settings: {    
+                        slidesToScroll: 1,              
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 427,
+                    settings: {
+                        slidesToScroll: 1,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script> 
+</body>
+</html>
