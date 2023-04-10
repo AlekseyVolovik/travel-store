@@ -20,7 +20,7 @@ try {
     $mail->SMTPAuth   = true; 
     $mail->Host       = 'smtp.gmail.com';                                          
     $mail->Username   = 'travelstoreby1@gmail.com';  //буферная почта для smtp              
-    $mail->Password   = 'vgqisywopfsbcndb';     
+    $mail->Password   = '';     
     $mail->SMTPSecure = 'ssl';                                   
     $mail->Port       = 465;                                   
     
